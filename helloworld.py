@@ -16,8 +16,16 @@ pygame.display.set_caption("Hello Gráfico")
 BRANCO = (255, 255, 255)
 AZUL = (0, 0, 255)
 VERMELHO = (255, 0, 0)
+RAIO = 10
+
 
 clock = pygame.time.Clock()
+
+#posicao que a bola esta parada
+posicao = 0
+# Pinta o fundo de branco
+tela.fill(BRANCO)
+print("Iniciando o loop principal...")
 
 posiçao = 0
 while True:
@@ -27,11 +35,9 @@ while True:
             pygame.quit()
             sys.exit()
 
-    # Pinta o fundo de branco
-    tela.fill(BRANCO)
 
     # Desenha um círculo azul no centro
-    pygame.draw.circle(tela, AZUL, (LARGURA // 2, ALTURA // 2), 10)
+    pygame.draw.circle(tela, AZUL, (LARGURA // 2, ALTURA // 2), 80)
 
     # Desenha uma linha vermelha
     # pygame.draw.line(tela, VERMELHO, (100, 100), (700, 500), 5)
