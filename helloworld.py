@@ -19,6 +19,7 @@ VERMELHO = (255, 0, 0)
 
 clock = pygame.time.Clock()
 
+posiçao = 0
 while True:
     # Tratamento de eventos (fechar janela, etc.)
     for evento in pygame.event.get():
@@ -30,10 +31,10 @@ while True:
     tela.fill(BRANCO)
 
     # Desenha um círculo azul no centro
-    pygame.draw.circle(tela, AZUL, (LARGURA // 2, ALTURA // 2), 80)
+    pygame.draw.circle(tela, AZUL, (LARGURA // 2, ALTURA // 2), 10)
 
     # Desenha uma linha vermelha
-    pygame.draw.line(tela, VERMELHO, (100, 100), (700, 500), 5)
+    # pygame.draw.line(tela, VERMELHO, (100, 100), (700, 500), 5)
 
     # Atualiza a tela
     pygame.display.flip()
