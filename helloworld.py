@@ -11,7 +11,7 @@ ALTURA = 600
 # Cria a janela
 tela = pygame.display.set_mode((LARGURA, ALTURA))
 pygame.display.set_caption("Hello Gráfico")
-
+# papai 
 # Cor em RGB
 BRANCO = (255, 255, 255)
 AZUL = (0, 0, 255)
